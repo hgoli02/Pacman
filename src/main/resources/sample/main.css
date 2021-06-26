@@ -1,0 +1,7 @@
+.mainMenu{
+    -fx-background-image: url("view/main.png");
+    -fx-background-size: stretch;
+    -fx-min-height: inherit;
+}
+.button1{
+}

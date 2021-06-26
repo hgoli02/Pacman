@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="mainPage" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.LoginView">
+   <children>
+      <Label layoutX="238.0" layoutY="68.0" prefHeight="51.0" prefWidth="150.0" style="-fx-background-color: black;" styleClass="signIn" text="Welcome!" textAlignment="CENTER" textFill="#cfc3d7" textOverrun="WORD_ELLIPSIS">
+          <font>
+            <Font name="MV Boli" size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="257.0" layoutY="135.0" />
+      <PasswordField fx:id="password" layoutX="257.0" layoutY="173.0" />
+      <Label layoutX="170.0" layoutY="132.0" prefHeight="31.0" prefWidth="77.0" styleClass="myLabel" text="username" textFill="WHITE">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="170.0" layoutY="170.0" prefHeight="31.0" prefWidth="77.0" text="password" textFill="WHITE">
+         <font>
+            <Font name="MV Boli" size="17.0" />
+         </font>
+         <styleClass>
+            <String fx:value="myLabel" />
+         </styleClass>
+      </Label>
+      <Button layoutX="183.0" layoutY="227.0" mnemonicParsing="false" onMouseClicked="#signUp" prefHeight="37.0" prefWidth="94.0" styleClass="button" text="sign up" textAlignment="CENTER">
+         <effect>
+            <DropShadow height="44.48" radius="10.2575" spread="0.13" width="38.55">
+               <color>
+                  <Color red="0.5617942214012146" green="0.1289999932050705" blue="0.8600000143051147" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Button layoutX="285.0" layoutY="227.0" mnemonicParsing="false" onMouseClicked="#login" prefHeight="37.0" prefWidth="94.0" styleClass="button" text="login" textAlignment="CENTER">
+         <effect>
+            <DropShadow height="101.06" radius="10.03" spread="0.55" width="101.06">
+               <color>
+                  <Color red="0.4026660919189453" green="0.06420565396547318" blue="0.44736841320991516" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Button layoutX="136.0" layoutY="311.0" mnemonicParsing="false" onMouseClicked="#changePassword" prefHeight="37.0" prefWidth="143.0" styleClass="button" text="change password" textAlignment="CENTER" >
+      <effect>
+         <DropShadow height="101.06" radius="10.03" spread="0.55" width="101.06">
+            <color>
+               <Color red="0.4026660919189453" green="0.06420565396547318" blue="0.44736841320991516" />
+            </color>
+         </DropShadow>
+      </effect>
+      </Button>
+      <Button layoutX="315.0" layoutY="311.0" mnemonicParsing="false" onMouseClicked="#removeAccount" prefHeight="37.0" prefWidth="120.0" styleClass="button" text="remove account" textAlignment="CENTER" >
+         <effect>
+            <DropShadow height="101.06" radius="10.03" spread="0.55" width="101.06">
+               <color>
+                  <Color red="0.4026660919189453" green="0.06420565396547318" blue="0.44736841320991516" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+   </children>
+
+    <stylesheets>
+        <URL value="@../login.css" />
+    </stylesheets>
+</AnchorPane>

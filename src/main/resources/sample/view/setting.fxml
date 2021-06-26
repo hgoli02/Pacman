@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.view.Setting">
+   <children>
+      <ChoiceBox fx:id="mapBox" layoutX="40.0" layoutY="88.0" prefHeight="27.0" prefWidth="210.0" />
+      <Label layoutX="53.0" layoutY="60.0" text="choose a map" />
+      <Button onMouseClicked="#generateMap" layoutX="306.0" layoutY="89.0" mnemonicParsing="false" text="generate new map" />
+      <RadioButton fx:id="easy" layoutX="57.0" layoutY="176.0" mnemonicParsing="false" text="easy" />
+      <RadioButton fx:id="hard" layoutX="56.0" layoutY="200.0" mnemonicParsing="false" text="hard(DFS)" />
+      <Slider fx:id="slider" blockIncrement="1.0" layoutX="57.0" layoutY="272.0" majorTickUnit="1.0" max="5.0" min="1.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" />
+      <Label layoutX="56.0" layoutY="237.0" text="Life" />
+      <Button layoutX="364.0" layoutY="298.0" mnemonicParsing="false" text="back" onMouseClicked="#back"/>
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+.signIn {
+    -fx-background-color: #ffeb3c
+}
+.mainPage{
+    -fx-background-image: url("765395.jpg");
+    -fx-background-size: contain;
+}
+.myLabel{
+    -fx-background-radius: 10%;
+    -fx-text-alignment: center;
+    -fx-font-weight: bold;
+}
+.button{
+    -fx-background-color: darkblue;
+    -fx-background-radius: 10px;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+.button:hover {
+    -fx-background-color: blueviolet;
+
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
